@@ -1,0 +1,118 @@
+#logo {
+	font-family: Montserrat;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 24px;
+}
+
+nav a {
+	font-family: Montserrat	;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	color: #fbfafa;
+} 
+
+.navbar-dark-bg {
+    background-color: #000; /* Dark background */
+    transition: background-color 0.3s ease;
+}
+
+.nav-link {
+	color: 	#fbfafa;
+}
+
+body {
+	background: linear-gradient(
+			rgba(0, 34, 65, 0.8),
+			rgba(0, 34, 65, 0.8)
+		),
+		url("./images/background.jpg") no-repeat center/cover;
+}
+
+#landing h2 {
+	font-family: Lora;
+	font-size: 30px;
+	font-weight: 550;
+	color: #FBD784;
+}
+
+#landing h3 {
+	font-family: Montserrat;
+	font-size: 25px;
+	font-weight: 450;
+	color: #F7F0F0;	
+}
+
+#landing p {
+	font-family: Montserrat;
+	color: #F7F0F0;	
+	text-align: justify;
+}
+
+#projects h2 {
+	font-family: Lora;
+	font-size: 50px;
+	font-weight: 550;
+	color: #FBD784;
+	padding-bottom: 25px;
+}
+
+#card-title {
+	font-family: Montserrat;
+	font-size: 25px;
+	font-weight: 600;
+	color: ##011e38;
+}
+
+#card-p {
+	font-family: Montserrat;
+	font-size: 15px;
+	font-weight: 300;
+	color: ##FBD784;
+}
+
+.card {
+	width: 30rem;
+	height: 32rem;
+	color: #001c35;
+}
+
+#tools h2 {
+	font-family: Lora;
+	font-size: 50px;
+	font-weight: 550;
+	color: #FBD784;
+	padding-bottom: 25px;
+}
+
+#contact img {
+	width: 40px;
+}
+
+#contact h4 {
+	font-family: Montserrat;
+	font-size: 25px;
+	font-weight: 450;
+	color: #F7F0F0;	
+}
+
+#contact h2 {
+	font-family: Montserrat;
+	font-size: 40px;
+	font-weight: 450;
+	color: #F7F0F0;	
+}
+
+#submit {
+	padding: 20px 50px;
+	background: #011E38;
+	border-radius: 25px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 24px;
+	text-align: center;
+	color: #FFFFFF;
+}
