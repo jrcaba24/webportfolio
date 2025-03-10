@@ -24,10 +24,10 @@ nav a {
 
 body {
 	background: linear-gradient(
-			rgba(0, 34, 65, 0.8),
-			rgba(0, 34, 65, 0.8)
+			rgba(0, 0, 0, 0.6),
+			rgba(0, 0, 0, 0.6)
 		),
-		url("./images/background.jpg") no-repeat center/cover;
+		url("./images/bg-2.jpeg") center/cover no-repeat fixed;
 }
 
 #landing h2 {
