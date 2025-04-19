@@ -1,118 +1,200 @@
-#logo {
-	font-family: Montserrat;
-	font-size: 24px;
-	font-weight: 700;
-	line-height: 24px;
+/* Fonts & Base */
+body {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+    ),
+    url("./images/bg-2.jpeg") center/cover no-repeat fixed;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
 }
 
-nav a {
-	font-family: Montserrat	;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 24px;
+a {
+    text-decoration: none;
+}
+
+#logo {
+    font-size: 24px;
+    font-weight: 700;
 	color: #fbfafa;
-} 
+}
+
+.navbar {
+    transition: background-color 0.3s ease-in-out;
+}
 
 .navbar-dark-bg {
-    background-color: #000; /* Dark background */
-    transition: background-color 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.95);
 }
 
 .nav-link {
-	color: 	#fbfafa;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fbfafa !important;
 }
 
-body {
-	background: linear-gradient(
-			rgba(0, 0, 0, 0.6),
-			rgba(0, 0, 0, 0.6)
-		),
-		url("./images/bg-2.jpeg") center/cover no-repeat fixed;
+.nav-link:hover {
+    color: #FBD784 !important;
+}
+
+/* Landing Section */
+
+.profile-img {
+	max-width: 300px;
+	border-radius: 50%;
+	border: 5px solid #FBD784;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.3);
 }
 
 #landing h2 {
-	font-family: Lora;
-	font-size: 30px;
-	font-weight: 550;
-	color: #FBD784;
+    font-family: Lora;
+    font-size: 36px;
+    color: #FBD784;
 }
 
 #landing h3 {
-	font-family: Montserrat;
-	font-size: 25px;
-	font-weight: 450;
-	color: #F7F0F0;	
+    font-size: 22px;
+    color: #FBD784;
 }
 
 #landing p {
-	font-family: Montserrat;
-	color: #F7F0F0;	
-	text-align: justify;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
 }
 
+/* Projects Section */
 #projects h2 {
-	font-family: Lora;
-	font-size: 50px;
-	font-weight: 550;
-	color: #FBD784;
-	padding-bottom: 25px;
-}
-
-#card-title {
-	font-family: Montserrat;
-	font-size: 25px;
-	font-weight: 600;
-	color: ##011e38;
-}
-
-#card-p {
-	font-family: Montserrat;
-	font-size: 15px;
-	font-weight: 300;
-	color: ##FBD784;
+    font-family: Lora;
+    font-size: 42px;
+    color: #FBD784;
 }
 
 .card {
-	width: 30rem;
-	height: 32rem;
-	color: #001c35;
+    max-width: 350px;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+    background-color: #fff;
 }
 
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+#card-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #FBD784;
+}
+
+#card-p {
+    font-size: 14px;
+    color: #011E38;
+}
+
+/* Tools */
 #tools h2 {
-	font-family: Lora;
-	font-size: 50px;
-	font-weight: 550;
-	color: #FBD784;
-	padding-bottom: 25px;
+    font-family: Lora;
+    font-size: 42px;
+    color: #FBD784;
 }
 
+#core-tools img,
+#other-tools img {
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+#core-tools img:hover,
+#other-tools img:hover {
+    transform: scale(1.1);
+}
+
+/* Contact */
 #contact img {
-	width: 40px;
+    width: 35px;
 }
 
-#contact h4 {
-	font-family: Montserrat;
-	font-size: 25px;
-	font-weight: 450;
-	color: #F7F0F0;	
+#contact h4,
+#contact h2 {
+    color: #F7F0F0;
 }
 
 #contact h2 {
-	font-family: Montserrat;
-	font-size: 40px;
-	font-weight: 450;
-	color: #F7F0F0;	
+    font-size: 36px;
 }
 
 #submit {
-	padding: 20px 50px;
-	background: #011E38;
-	border-radius: 25px;
-	font-family: 'Montserrat';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 25px;
-	line-height: 24px;
-	text-align: center;
-	color: #FFFFFF;
+    padding: 15px 40px;
+    background: #011E38;
+    border-radius: 25px;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+#submit:hover {
+    background: #FBD784;
+    color: #011E38;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #landing h2 {
+        font-size: 28px;
+    }
+
+    #landing h3 {
+        font-size: 18px;
+    }
+
+    #projects h2,
+    #tools h2,
+    #contact h2 {
+        font-size: 32px;
+    }
+
+    .card {
+        margin-bottom: 30px;
+    }
+
+    #submit {
+        width: 100%;
+    }
+}
+
+/* Default tool icon style */
+#core-tools img,
+#other-tools img {
+    margin: 10px;
+    width: 150px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+/* Scale down on tablets */
+@media (max-width: 992px) {
+    #core-tools img,
+    #other-tools img {
+        width: 120px;
+    }
+}
+
+/* Scale down further on mobile */
+@media (max-width: 576px) {
+    #core-tools img,
+    #other-tools img {
+        width: 90px;
+    }
 }
